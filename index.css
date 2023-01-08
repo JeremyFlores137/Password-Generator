@@ -1,0 +1,173 @@
+body{
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    background-color: #1C1C1C;
+}
+.green-text{
+    color: #4ADF86;
+    font-weight: 800;
+}
+.generator-container{
+    margin: 30px auto;
+    padding: 15px;
+    width: 90%;
+    max-width: 650px;
+    height: 550px;
+    display:flex;
+    flex-direction: column;
+    background-color: #1F2937;
+    align-items: center;
+}
+h1{
+    color: white;
+    font-size: 40px;
+}
+p{
+    color: #D5D4D8;
+    font-size: 20px;
+}
+.password-output{
+    display: flex;
+    flex-direction: column;
+}
+#password1{
+    text-align: center;
+    padding: 5px;
+    width: 45%;
+    height: 25px;
+    background:#273549;
+    font-size: 12px;
+}
+#password2{
+    text-align: center;
+    padding: 5px;
+    width: 45%;
+    height: 25px;
+    background: #273549;
+    font-size: 12px;
+}
+.password-box{
+    display: flex;
+    justify-content: space-around;
+}
+.password-box>div{
+    margin: 25px 0 25px 0;
+    border-radius: 5px;
+}
+.password-btn{
+    color: white;
+    background: #4ADF86;
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+    margin: 15px 0;
+    text-shadow: 0 0 1px black;
+    cursor: pointer;
+    width: 150px;
+    font-size: 14px;
+}
+.password-btn:hover{
+    background-image: linear-gradient(#4ADF86, #148240);
+}
+.copy-box{
+    display: flex;
+    justify-content: space-around;
+}
+.copy-box>button{
+    width: 80px;
+    font-family: 'Karla', sans-serif;
+    background: #D5D4D8;
+    border: none;
+    border-radius: 5px;
+}
+.copy-box>button:hover{
+    background-image: linear-gradient(#D5D4D8,#979699);
+    cursor: pointer;
+}
+hr{
+    border: 0.1px solid #2F3E53;
+    background: #2F3E53;
+}
+label{ 
+    font-size: 20px;
+    color: #D5D4D8;
+}
+.digit-password{
+    margin: 20px 0;
+    padding: 5px 10px;
+    background:#4ADF86;
+    border: 0 solid #148240;
+    border-radius: 4px;
+    width: 80px;
+}
+.digit-password:focus{
+    background-color: lightblue;
+}
+::placeholder{
+    text-shadow: 0 0 1px black;
+    color: white;
+}
+.condition{
+    font-size: 10px;
+}
+/*Toggle Switch*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 26px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 20px;
+    left: 2.7px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+.slider{
+    border-radius: 5px;
+}
+.symbols, .numbers{
+    color:#ccc;
+    font-size: 10px;
+    margin: 5px;
+}

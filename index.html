@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Password Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="generator-container">
+        <div class="password-input">
+            <h1>Generator a<br/> 
+                <span class="green-text">random password</span></h1>
+            <p>Never use an insecure password again</p><br>
+            <label for="digits">Number of digits <span class="condition">(minimun 8)</span>: </label><br>
+            <input id="digit-number" type="number" name="digits" placeholder="Enter here" min=8 max=20 class="digit-password">
+            <span class="symbols">Symbols: </span>
+            <label class="switch">
+                <input type="checkbox" id="switch-symbol" onclick="switchSymbol()">
+                <span class="slider"></span>
+            </label>
+            <span class="symbols">Numbers: </span>
+            <label class="switch">
+                <input type="checkbox" id="switch-number" onclick="switchNumber()">
+                <span class="slider"></span>
+            </label>
+            <br>
+            <button class="password-btn" onclick="passGenerate()">Generate passwords</button>
+        <hr>
+        <div class="password-output">
+            <div class="password-box">
+                <div id="password1" class="green-text"></div>
+                <div id="password2" class="green-text"></div>
+            </div>
+            <div class="copy-box">
+                <button class="copy" id="copy-left" onclick="copyLeft()">Copy to clipboard</button>
+                <button class="copy" id="copy-right" onclick="copyRight()">Copy to clipboard</button>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
