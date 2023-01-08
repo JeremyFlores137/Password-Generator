@@ -60,15 +60,25 @@ function passGenerate(){
 }
 function copyLeft(){
     var copyText = document.getElementById("password1");
-    navigator.clipboard.writeText(copyText.textContent);
-    // Alert the copied text
-    alert("Copied the text: " + copyText.textContent);
+    navigator.clipboard
+        .writeText(copyText.textContent)
+        .then(() => {
+            alert("successfully copied");
+        })
+        .catch(() => {
+            alert("something went wrong");
+        });
 }
 function copyRight(){
     var copyText = document.getElementById("password2");
-    navigator.clipboard.writeText(copyText.textContent);
-    // Alert the copied text
-    alert("Copied the text: " + copyText.textContent);
+    navigator.clipboard
+        .writeText(copyText.textContent)
+        .then(() => {
+            alert("successfully copied");
+        })
+        .catch(() => {
+            alert("something went wrong");
+        });
 }
 function switchSymbol(){
     symbols = ["~","`","!","@","#","$","%","^","&","*","(",")","_","-",
